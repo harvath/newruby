@@ -20,8 +20,7 @@ end
 
 # create file, write shebang and newline twice
 file = File.new(file_name,'w') 
-file.puts('#! /usr/bin/env ruby')
-file.puts("\n\n")
+file.write "#! /usr/bin/env ruby \n\n\n"
 file.chmod(0755)
 file.close
 
